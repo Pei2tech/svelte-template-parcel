@@ -35,13 +35,13 @@ Check the console and Navigate to [localhost:xxxx](http://localhost:xxxx). You s
 
 ### svelte component
 
-To create an production version of component only:
+To create a production version of component only:
 
 ```bash
 npm run build:component:
 ```
 
-Then, you can check the optimised omponent within the folder `/public/build`.
+Then, you can check the optimised component within the folder `/public/build`.
 
 ### svelte app
 
