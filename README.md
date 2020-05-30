@@ -4,10 +4,10 @@
 
 This is a project template for [Svelte](https://svelte.dev) apps. 
 
-To create a new project based on this template, you can clone it:
+To create a new project based on this template, you can degit it:
 
 ```bash
-$ git clone https://github.com/Pei2tech/svelte-template-parcel.git svelte-app
+$ npx degit pei2tech/svelte-template-parcel.git svelte-app
 ```
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed for the following procedure.*
