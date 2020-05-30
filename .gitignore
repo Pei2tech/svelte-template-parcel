@@ -1,5 +1,7 @@
+*.js linguist-detectable=true
 /node_modules/
 /public/build/
 /dist/
 .cache/
+
 
