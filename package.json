@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "This is Svelte template using parcel bundler.",
   "scripts": {
-    "component": "parcel watch -d public/build src/main.js -o bundle",
-    "public": "wait-on public/build/bundle.js && parcel public/index.html",
+    "delete": "del-cli --force public/build & del-cli --force dist",
+    "component": "npm run delete && parcel watch -d public/build src/main.js -o bundle",
+    "public": "wait-on public/build/bundle.js && wait-on public/build/bundle.css && parcel public/index.html",
     "dev": "concurrently --kill-others \"npm run component \"  \"npm run public\" ",
     "build:component": "parcel build -d public/build --no-source-maps src/main.js",
     "build:public": "parcel build --no-source-maps public/index.html",
@@ -13,9 +14,11 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^5.2.0",
+    "del-cli": "^3.0.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-svelte": "^4.0.6",
     "svelte": "^3.23.0",
     "wait-on": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }

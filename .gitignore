@@ -3,5 +3,5 @@
 /public/build/
 /dist/
 .cache/
-
+package-lock.json
 
